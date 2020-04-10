@@ -1,0 +1,11 @@
+{
+  "esversion": 9,
+  "globals": {
+    "module": false,
+    "process": false,
+    "require": false
+  },
+  "trailingcomma": true,
+  "undef": true,
+  "unused": true
+}

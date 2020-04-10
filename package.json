@@ -1,0 +1,17 @@
+{
+  "name": "kaleidoscope-visions",
+  "version": "1.0.0",
+  "description": "Kaleidoscope Visions jewelry site",
+  "author": "Perry J Auld",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
