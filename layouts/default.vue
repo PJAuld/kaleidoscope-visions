@@ -2,7 +2,9 @@
   <div>
     <Banner />
     <Menu />
-    <nuxt />
+    <div class="content">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -30,5 +32,10 @@ export default {
 html {
   background-color: $background-color;
   font-family: Verdana;
+  color: #333333;
+}
+
+.content {
+  padding: 1rem 5% 0 5%;
 }
 </style>
