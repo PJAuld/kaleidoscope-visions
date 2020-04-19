@@ -9,10 +9,10 @@
           <n-link to="/">Gallery</n-link>
         </div>
         <div class="menu-link">
-          <n-link to="/">Etsy Store</n-link>
+          <a target="_blank" href="https://www.etsy.com">Etsy Store</a>
         </div>
         <div class="menu-link">
-          <n-link to="/">About</n-link>
+          <n-link to="/about">About</n-link>
         </div>
         <div class="menu-link">
           <n-link to="/">Contact</n-link>

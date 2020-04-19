@@ -1,5 +1,15 @@
-$background-color: #e0e0e0;
+$background-color: #ededed;
 $border-color: #616161;
 $rainbow-fill: linear-gradient(160deg, #ff0000, #ff9900, #ffff00, #008000, #0000ff, #800080);
 $translucent: rgba(0, 0, 0, 0.3);
 $white: #FFFFFF;
+
+div.text * {
+  margin-bottom: 1rem;
+}
+
+@mixin imageBorder {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  overflow: hidden;
+}
