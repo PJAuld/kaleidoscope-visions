@@ -15,7 +15,7 @@
           <n-link to="/about">About</n-link>
         </div>
         <div class="menu-link">
-          <n-link to="/">Contact</n-link>
+          <n-link to="/contact">Contact</n-link>
         </div>
       </nav>
     </div>
@@ -72,6 +72,7 @@ nav {
 .menu-link > a:hover {
   background: $translucent;
   color: $white;
+  font-weight: bolder;
 }
 
 .rainbow-container {
