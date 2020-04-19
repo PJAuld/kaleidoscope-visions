@@ -6,7 +6,7 @@
           <n-link to="/">Home</n-link>
         </div>
         <div class="menu-link">
-          <n-link to="/">Gallery</n-link>
+          <n-link to="/gallery">Gallery</n-link>
         </div>
         <div class="menu-link">
           <a target="_blank" href="https://www.etsy.com">Etsy Store</a>
@@ -75,6 +75,7 @@ nav {
   font-weight: bolder;
 }
 
+/* Rainbow background on hover */
 .rainbow-container {
   height: 42px;
   overflow: hidden;
@@ -91,8 +92,6 @@ nav {
   position: absolute;
   width: 200vw;
 }
-
-
 @keyframes menu {
   0% { left: -100%; }
   50% { left: 0%; }

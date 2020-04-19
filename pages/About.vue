@@ -25,7 +25,12 @@
 
 <script>
 export default {
-  metaInfo: { name: 'About' },
+  data() {
+    return { title: 'About' };
+  },
+  head() {
+    return { title: `Kaleidoscope Visions - ${this.title}` };
+  }
 }
 </script>
 

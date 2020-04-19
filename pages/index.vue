@@ -29,7 +29,12 @@
 
 <script>
 export default {
-  metaInfo: { name: 'Home' },
+  data() {
+    return { title: 'Home' };
+  },
+  head() {
+    return { title: `Kaleidoscope Visions - ${this.title}` };
+  }
 }
 </script>
 
@@ -42,8 +47,6 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   margin: 2rem 0 2rem 0;
 }
-
-.image {}
 
 .image > img {
   @include imageBorder;
