@@ -1,5 +1,5 @@
 <template>
-  <div class="home-body">
+  <section id="home">
     <div class="text">
       <h1>Welcome to Kaleidoscope Visions!</h1>
       <p>Have you been trying to find the right piece that just suits your look
@@ -24,7 +24,7 @@
         <img src="~assets/pieces/0464-na.jpg" />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="gallery">
+  <section class="gallery">
     <h1>Gallery</h1>
-  </div>
+  </section>
 </template>
 
 <script>

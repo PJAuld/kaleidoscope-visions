@@ -1,7 +1,9 @@
 <template>
   <div>
-    <Banner />
-    <Menu />
+    <header>
+      <Banner />
+      <Menu />
+    </header>
     <div class="content">
       <nuxt />
     </div>
