@@ -14,26 +14,28 @@
       <p>Let's see if we can create the perfect piece for what you need!</p>
     </div>
     <div class="showcase">
-      <div class="image">
-        <img src="~assets/pieces/0428-na.jpg" />
-      </div>
-      <div class="image">
-        <img src="~assets/pieces/0430-na.jpg" />
-      </div>
-      <div class="image">
-        <img src="~assets/pieces/0464-na.jpg" />
-      </div>
+      <Piece v-for="piece in catalog.slice(0, 3)"
+          :key="piece.id"
+          :id="piece.id"
+          :extension="piece.extension" />
     </div>
   </section>
 </template>
 
 <script>
+import catalog from '../assets/catalog/catalog';
+import Piece from '../components/Piece';
+
 export default {
+  components: { Piece },
   data() {
-    return { title: 'Home' };
+    return {
+      title: 'Home',
+      catalog: catalog.getCatalogData(),
+    };
   },
   head() {
-    return { title: `Kaleidoscope Visions - ${this.title}` };
+    return { title: this.title };
   }
 }
 </script>
@@ -46,10 +48,5 @@ export default {
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   margin: 2rem 0 2rem 0;
-}
-
-.image > img {
-  @include imageBorder;
-  width: 100%;
 }
 </style>

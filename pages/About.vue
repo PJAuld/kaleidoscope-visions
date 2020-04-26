@@ -27,7 +27,7 @@ export default {
     return { title: 'About' };
   },
   head() {
-    return { title: `Kaleidoscope Visions - ${this.title}` };
+    return { title: this.title };
   }
 }
 </script>

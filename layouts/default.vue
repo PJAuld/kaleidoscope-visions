@@ -19,6 +19,11 @@ export default {
     Banner,
     Menu
   }
+  head() {
+    return {
+      titleTemplate: '%s - Kaleidoscope Visions'
+    }
+  }
 };
 </script>
 

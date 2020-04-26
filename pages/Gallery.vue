@@ -1,6 +1,7 @@
 <template>
   <section class="gallery">
     <h1>Gallery</h1>
+    <div
   </section>
 </template>
 
@@ -10,11 +11,18 @@ export default {
     return { title: 'Gallery' };
   },
   head() {
-    return { title: `Kaleidoscope Visions - ${this.title}` };
+    return { title: this.title };
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/main.scss';
+
+.{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0 2rem 0;
+}
 </style>
