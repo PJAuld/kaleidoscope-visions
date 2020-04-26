@@ -1,14 +1,26 @@
 <template>
-  <section class="gallery">
+  <section id="gallery">
     <h1>Gallery</h1>
-    <div
+    <div class="gallery">
+      <Piece v-for="piece in catalog"
+          :key="piece.id"
+          :id="piece.id"
+          :extension="piece.extension" />
+    </div>
   </section>
 </template>
 
 <script>
+import catalog from '../assets/catalog/catalog';
+import Piece from '../components/Piece';
+
 export default {
+  components: { Piece },
   data() {
-    return { title: 'Gallery' };
+    return {
+      title: 'Gallery',
+      catalog: catalog.getCatalogData(),
+    };
   },
   head() {
     return { title: this.title };
@@ -18,11 +30,4 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/main.scss';
-
-// {
-//   display: grid;
-//   grid-gap: 1rem;
-//   grid-template-columns: repeat(3, 1fr);
-//   margin: 2rem 0 2rem 0;
-// }
 </style>

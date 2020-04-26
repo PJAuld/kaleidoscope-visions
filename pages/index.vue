@@ -13,7 +13,7 @@
         for gals finding a hard time for good pieces that fit properly.</p>
       <p>Let's see if we can create the perfect piece for what you need!</p>
     </div>
-    <div class="showcase">
+    <div class="gallery">
       <Piece v-for="piece in catalog.slice(0, 3)"
           :key="piece.id"
           :id="piece.id"
@@ -42,11 +42,4 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/main.scss';
-
-.showcase {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0 2rem 0;
-}
 </style>

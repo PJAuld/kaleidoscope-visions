@@ -13,3 +13,10 @@ div.text * {
   border-radius: 5px;
   overflow: hidden;
 }
+
+.gallery {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0 2rem 0;
+}
