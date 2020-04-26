@@ -19,10 +19,10 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/main.scss';
 
-.{
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0 2rem 0;
-}
+// {
+//   display: grid;
+//   grid-gap: 1rem;
+//   grid-template-columns: repeat(3, 1fr);
+//   margin: 2rem 0 2rem 0;
+// }
 </style>

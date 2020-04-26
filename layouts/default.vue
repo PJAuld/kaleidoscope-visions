@@ -18,7 +18,7 @@ export default {
   components: {
     Banner,
     Menu
-  }
+  },
   head() {
     return {
       titleTemplate: '%s - Kaleidoscope Visions'
