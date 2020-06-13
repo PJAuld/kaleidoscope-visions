@@ -14,7 +14,7 @@
       <p>Let's see if we can create the perfect piece for what you need!</p>
     </div>
     <div class="gallery">
-      <Piece v-for="piece in catalog.slice(0, 3)"
+      <Piece v-for="piece in catalog.slice(0, 4)"
           :key="piece.id"
           :id="piece.id"
           :extension="piece.extension" />

@@ -11,19 +11,12 @@
 </template>
 
 <script>
-import Banner from '~/components/Banner.vue';
-import Menu from '~/components/Menu.vue';
+import Banner from '~/components/Banner';
+import Menu from '~/components/Menu';
 
 export default {
-  components: {
-    Banner,
-    Menu
-  },
-  head() {
-    return {
-      titleTemplate: '%s - Kaleidoscope Visions'
-    }
-  }
+  components: { Banner, Menu },
+  head() { return { titleTemplate: '%s - Kaleidoscope Visions' } }
 };
 </script>
 
