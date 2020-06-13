@@ -40,22 +40,29 @@ export default {
 
 .modal > img {
   border-radius: 5px;
+  max-height: 95vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: auto;
   z-index: 2;
 }
 
 .piece-image {
   @include imageBorder;
+  position: relative;
   height: 190px;
 }
 
 .piece-image > img {
   height: auto;
+  left: 50%;
   max-width: 100%;
   min-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: auto;
 }
 </style>
