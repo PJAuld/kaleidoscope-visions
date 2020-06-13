@@ -3,15 +3,13 @@
     <style>
       :root { --menu-length: {{ menu.length }} }
     </style>
-    <div class="menu-options">
-      <nav>
-        <MenuLink v-for="link in menu"
-            :key="link.name"
-            :exteriorLink="link.exterior"
-            :name="link.name"
-            :link="link.url" />
-      </nav>
-    </div>
+    <nav>
+      <MenuLink v-for="link in menu"
+          :key="link.name"
+          :exteriorLink="link.exterior"
+          :name="link.name"
+          :link="link.url" />
+    </nav>
   </div>
 </template>
 
@@ -42,17 +40,14 @@ export default {
 @import '~/assets/main.scss';
 
 nav {
+  border-bottom: 2px solid $border-color;
   display: grid;
   grid-template-columns: repeat(var(--menu-length), 1fr);
-  height: 100%;
+  height: 42px;
+  width: 100vw;
 }
 
 .menu {
   position: relative;
-}
-
-.menu-options {
-  height: 42px;
-  width: 100vw;
 }
 </style>
