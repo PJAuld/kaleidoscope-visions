@@ -27,8 +27,6 @@ export default {
           url: 'https://www.etsy.com/shop/KaleidoscopeVisionUS',
           exterior: true,
         },
-        { name: 'About', url: '/about' },
-        // { name: 'Contact', url: '/contact' },
       ],
     };
   },
